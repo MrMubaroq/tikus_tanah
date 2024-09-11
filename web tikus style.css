@@ -1,0 +1,77 @@
+body {
+    background: url(https://i.pinimg.com/564x/a3/24/d9/a324d9cdd187f0a9641a9dc437af3283.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1,h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial;
+    margin: 10px;
+    color: #fff;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(54, 244, 86);
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgb(25, 255, 251);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    cursor: url(palu1.png), auto;
+  
+}
+
+.container:active {
+    cursor: url(palu2.png), auto;
+}
+
+.tanah {
+width: 200px;
+height: 200px;
+position: relative;
+overflow: hidden; 
+float: left;
+}
+
+
+.tanah::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(tanah.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px;
+  
+}
+
+
+.tikus {
+    width: 100%;
+    height: 100%;
+    background: url(tikus.png) bottom center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+    top: -15px;
+}
