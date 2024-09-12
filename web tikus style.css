@@ -1,5 +1,5 @@
 body {
-    background: url(https://i.pinimg.com/564x/a3/24/d9/a324d9cdd187f0a9641a9dc437af3283.jpg);
+    background: url(gambar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -17,7 +17,7 @@ button {
     width: 100px;
     height: 30px;
     border-radius: 7px;
-    background-color: rgb(54, 244, 86);
+  
     display: block;
     margin: auto;
     border: 1px solid black;
